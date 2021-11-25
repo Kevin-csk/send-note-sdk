@@ -1,0 +1,21 @@
+{
+    "name": "chen-shikang/send-note-sdk",
+    "description": "send note",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "陈世康",
+            "email": "2270024421@qq.com"
+        }
+    ],
+    "require": {
+        "php": "^7.3|^8.0",
+        "tencentcloud/tencentcloud-sdk-php": "^3.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "ChenShikang\\SendNoteSdk\\": "src/"
+        }
+    }
+}
