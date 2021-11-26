@@ -1,6 +1,7 @@
 # send-note-sdk
 send note
 
+```php
 /* 必要步骤：
  * 实例化一个认证对象，入参需要传入腾讯云账户密钥对secretId，secretKey。
  * 这里采用的是从环境变量读取的方式，需要在环境变量中先设置这两个值。
@@ -8,6 +9,7 @@ send note
  * 以免泄露密钥对危及你的财产安全。
  * CAM密匙查询: https://console.cloud.tencent.com/cam/capi 
  */
+use Chenshikang\SendNoteSdk\factories\NoteFactory;
  
 //工厂模式  
 $obj=(new NoteFactory())->sendNote('','','','','','');
@@ -25,4 +27,4 @@ $obj=(new NoteFactory())->sendNote('','','','','','');
  $result=$obj->sendNote($phone,$code);//1.手机号 2.验证码
  
  //后续跟上自己的逻辑判断 
- 
+ ```
