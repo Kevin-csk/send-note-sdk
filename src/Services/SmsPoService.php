@@ -19,10 +19,10 @@ class SmsPoService implements NoteInterface
     );
     private $config = [];
 
-    public function __construct($secretId, $secretKey)
+    public function __construct($config)
     {
-        $this->config['secret_id'] = $secretId;
-        $this->config['secret_key'] = $secretKey;
+        $this->config['secret_id'] = $config['secret_id'];
+        $this->config['secret_key'] = $config['secret_key'];
     }
 
     /**

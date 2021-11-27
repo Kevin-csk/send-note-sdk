@@ -18,13 +18,13 @@ class TencentNoteService implements NoteInterface
 {
     private $config = [];
 
-    public function __construct($secretId, $secretKey, $smsSdkAppId, $signName, $templateId)
+    public function __construct($config)
     {
-        $this->config['secret_id'] = $secretId;
-        $this->config['secret_key'] = $secretKey;
-        $this->config['sms_sdk_app_id'] = $smsSdkAppId;
-        $this->config['sign_name'] = $signName;
-        $this->config['template_id'] = $templateId;
+        $this->config['secret_id'] = $config['secret_id'];
+        $this->config['secret_key'] = $config['secret_key'];
+        $this->config['sms_sdk_app_id'] = $config['sms_sdk_app_id'];
+        $this->config['sign_name'] = $config['sign_name'];
+        $this->config['template_id'] = $config['template_id'];
     }
 
     /**

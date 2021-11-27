@@ -10,19 +10,21 @@ send note
  * CAM密匙查询: https://console.cloud.tencent.com/cam/capi 
  */
 use Chenshikang\SendNoteSdk\factories\NoteFactory;
- 
+ /* 参数
+  * 短信控制台: https://console.cloud.tencent.com/smsv2
+  */
+$config = [
+    'send_cate' => '', //短信宝就写smspo，腾讯云就写tencent
+    'secret_id' => '', //短信宝写平台用户名，腾讯云写自己的secret_id
+    'secret_key' => '', //短信宝写平台密码，腾讯云写自己的secret_key
+    'sms_sdk_app_id' => '', //短信宝直接写空字符串，腾讯云写自己的短信应用ID: 短信SdkAppId在 [短信控制台] 添加应用后生成的实际SdkAppId，示例如1400006666
+    'sign_name' => '', //短信宝直接传空字符串，腾讯云写自己的短信签名内容，必须填写已审核通过的签名，签名信息可登录 [短信控制台] 查看
+    'template_id' => '' //短信宝直接传空字符串，腾讯云写自己的模板 ID: 必须填写已审核通过的模板 ID。模板ID可登录 [短信控制台] 查看];
+];
 //工厂模式  
-$obj=(new NoteFactory())->sendNote('','','','','','');
+$obj=(new NoteFactory())->sendNote($config);
    
-/* 参数
- * 短信控制台: https://console.cloud.tencent.com/smsv2
- * 1.短信宝就写smspo，腾讯云就写tencent
- * 2.短信宝写用户名，腾讯云写自己的secret_id
- * 3.短信宝写密码，腾讯云写自己的secret_key
- * 4.短信宝直接传空字符串，腾讯云写自己的短信应用ID: 短信SdkAppId在 [短信控制台] 添加应用后生成的实际SdkAppId，示例如1400006666
- * 5.短信宝直接传空字符串，腾讯云写自己的短信签名内容，必须填写已审核通过的签名，签名信息可登录 [短信控制台] 查看
- * 6.短信宝直接传空字符串，腾讯云写自己的模板 ID: 必须填写已审核通过的模板 ID。模板ID可登录 [短信控制台] 查看
- */
+
  
  $result=$obj->sendNote($phone,$code);//1.手机号 2.验证码
  
