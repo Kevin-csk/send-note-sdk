@@ -1,6 +1,6 @@
 <?php
 
-namespace ChenShikang\SendNoteSdk\Interfaces;
+namespace Chenshikang\SendNoteSdk\Interfaces;
 
 interface NoteInterface
 {

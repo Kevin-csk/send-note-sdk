@@ -650,16 +650,16 @@
         },
         {
             "name": "tencentcloud/tencentcloud-sdk-php",
-            "version": "3.0.527",
+            "version": "3.0.528",
             "source": {
                 "type": "git",
                 "url": "https://github.com/TencentCloud/tencentcloud-sdk-php.git",
-                "reference": "1ff1adf4a68e889bbd177559ff11c386b38d658a"
+                "reference": "587b684b347a3f75d88c37c224bb508c15853f41"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/TencentCloud/tencentcloud-sdk-php/zipball/1ff1adf4a68e889bbd177559ff11c386b38d658a",
-                "reference": "1ff1adf4a68e889bbd177559ff11c386b38d658a",
+                "url": "https://api.github.com/repos/TencentCloud/tencentcloud-sdk-php/zipball/587b684b347a3f75d88c37c224bb508c15853f41",
+                "reference": "587b684b347a3f75d88c37c224bb508c15853f41",
                 "shasum": "",
                 "mirrors": [
                     {
@@ -697,9 +697,9 @@
             "homepage": "https://github.com/TencentCloud/tencentcloud-sdk-php",
             "support": {
                 "issues": "https://github.com/TencentCloud/tencentcloud-sdk-php/issues",
-                "source": "https://github.com/TencentCloud/tencentcloud-sdk-php/tree/3.0.527"
+                "source": "https://github.com/TencentCloud/tencentcloud-sdk-php/tree/3.0.528"
             },
-            "time": "2021-11-25T01:02:02+00:00"
+            "time": "2021-11-26T01:04:45+00:00"
         }
     ],
     "packages-dev": [],

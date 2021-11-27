@@ -1,8 +1,8 @@
 <?php
 
-namespace ChenShikang\SendNoteSdk\Services;
+namespace Chenshikang\SendNoteSdk\Services;
 
-use ChenShikang\SendNoteSdk\Interfaces\NoteInterface;
+use Chenshikang\SendNoteSdk\Interfaces\NoteInterface;
 
 class SmsPoService implements NoteInterface
 {

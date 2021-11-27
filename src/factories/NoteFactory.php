@@ -2,8 +2,8 @@
 
 namespace Chenshikang\SendNoteSdk\factories;
 
-use ChenShikang\SendNoteSdk\Services\SmsPoService;
-use ChenShikang\SendNoteSdk\Services\TencentNoteService;
+use Chenshikang\SendNoteSdk\Services\SmsPoService;
+use Chenshikang\SendNoteSdk\Services\TencentNoteService;
 
 class NoteFactory
 {

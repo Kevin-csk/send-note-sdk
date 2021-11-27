@@ -1,8 +1,8 @@
 <?php
 
-namespace ChenShikang\SendNoteSdk\Services;
+namespace Chenshikang\SendNoteSdk\Services;
 // 导入对应产品模块的client
-use ChenShikang\SendNoteSdk\Interfaces\NoteInterface;
+use Chenshikang\SendNoteSdk\Interfaces\NoteInterface;
 use TencentCloud\Sms\V20210111\SmsClient;
 
 // 导入要请求接口对应的Request类
