@@ -40,6 +40,6 @@ class SmsPoService implements NoteInterface
         $sendurl = $smsapi . "sms?u=" . $user . "&p=" . $pass . "&m=" . $phone . "&c=" . urlencode($content);
         $result = file_get_contents($sendurl);
 
-        echo $this->statusStr[$result];
+        return $this->statusStr[$result];
     }
 }

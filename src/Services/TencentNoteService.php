@@ -103,7 +103,7 @@ class TencentNoteService implements NoteInterface
             // 您可以通过官网接口文档或跳转到response对象的定义处查看返回字段的定义
 //            print_r($resp->TotalCount);
         } catch (TencentCloudSDKException $e) {
-            echo $e;
+            return $e;
         }
     }
 }
