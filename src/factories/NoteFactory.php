@@ -9,17 +9,17 @@ class NoteFactory
 {
     /**
      * 根据发送方式实例化不同的类
-     * @param $sendCate
+     * @param $config
      * @return SmsPoService|TencentNoteService
      */
-    public function sendNote($sendCate, $secretId, $secretKey, $smsSdkAppId, $signName, $templateId)
+    public function sendNote($config)
     {
-        switch ($sendCate) {
+        switch ($config['send_cate']) {
             case 'smspo' :
-                return new SmsPoService($secretId, $secretKey);
+                return new SmsPoService($config);
                 break;
             case 'tencent' :
-                return new TencentNoteService($secretId, $secretKey, $smsSdkAppId, $signName, $templateId);
+                return new TencentNoteService($config);
                 break;
         }
     }
